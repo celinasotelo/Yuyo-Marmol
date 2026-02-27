@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         <div className="relative text-center max-w-3xl px-6">
-          <h1 className="font-playfair text-5xl font-bold">
+          <h1 className="font-display text-5xl font-bold">
             Elegancia natural que transforma tu espacio
           </h1>
 

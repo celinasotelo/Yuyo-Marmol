@@ -1,65 +1,177 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import { products } from "@/data/product"
+import ProductCard from "@/components/ProductCard"
 
 export default function Home() {
+  const featuredProducts = products.filter(p => p.featured)
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="flex flex-col">
+
+      {/* ================= HERO ================= */}
+      <section className="relative h-[85vh] flex items-center justify-center text-white">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/mesada0.jpg"
+            alt="Cocina moderna con mesada de mármol"
+            fill
+            priority
+            className="object-cover brightness-50"
+          />
+        </div>
+
+        <div className="relative text-center max-w-3xl px-6">
+          <h1 className="font-playfair text-5xl font-bold">
+            Elegancia natural que transforma tu espacio
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="text-lg md:text-xl mb-8 text-gray-200">
+            Mesadas, revestimientos y trabajos en mármol y granito
+            de alta calidad para transformar tus espacios.
           </p>
+
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <Link
+              href="/catalogo"
+              className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+            >
+              Ver catálogo
+            </Link>
+
+            <a
+              href="https://wa.me/549XXXXXXXXX"
+              target="_blank"
+              className="border border-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition"
+            >
+              Consultar por WhatsApp
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* ================= BENEFICIOS ================= */}
+      <section className="bg-gray-100 py-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 text-center gap-8 px-6">
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2 text-gray-900">Instalación profesional</h3>
+            <p className="text-gray-600 text-sm">
+              Trabajo realizado por especialistas con experiencia.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2 text-gray-900">Material premium</h3>
+            <p className="text-gray-600 text-sm">
+              Granitos y mármoles seleccionados de primera calidad.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2 text-gray-900">Presupuesto sin cargo</h3>
+            <p className="text-gray-600 text-sm">
+              Cotizamos tu proyecto sin compromiso.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2 text-gray-900">Atención personalizada</h3>
+            <p className="text-gray-600 text-sm">
+              Asesoramiento adaptado a tu necesidad.
+            </p>
+          </div>
+
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      {/* ================= PROMOCIONES ================= */}
+      <section className="py-20 bg-black text-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            Promociones activas
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+
+            <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition">
+              <h3 className="text-xl font-semibold mb-4">
+                10% OFF en mesadas negras
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Válido hasta fin de mes.
+              </p>
+              <Link
+                href="/catalogo"
+                className="inline-block mt-4 bg-white text-black px-6 py-2 rounded-lg font-medium"
+              >
+                Ver productos
+              </Link>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition">
+              <h3 className="text-xl font-semibold mb-4">
+                Instalación bonificada
+              </h3>
+              <p className="text-gray-300 mb-4">
+                En compras superiores a determinado monto.
+              </p>
+              <Link
+                href="/catalogo"
+                className="inline-block mt-4 bg-white text-black px-6 py-2 rounded-lg font-medium"
+              >
+                Consultar
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ================= DESTACADOS ================= */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Productos destacados
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-900">
+            {featuredProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/catalogo"
+              className="bg-black text-white px-8 py-3 rounded-xl font-semibold hover:bg-gray-800 transition"
+            >
+              Ver todo el catálogo
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= CTA FINAL ================= */}
+      <section className="bg-gray-100 py-20 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          ¿Listo para renovar tu espacio?
+        </h2>
+
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Solicitá tu presupuesto sin compromiso y transformá tu cocina,
+          baño o proyecto con materiales de alta calidad.
+        </p>
+
+        <a
+          href="https://wa.me/549XXXXXXXXX"
+          target="_blank"
+          className="bg-black text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-gray-800 transition"
+        >
+          Solicitar presupuesto
+        </a>
+      </section>
+
+    </main>
+  )
 }

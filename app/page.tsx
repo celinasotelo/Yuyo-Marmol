@@ -129,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* ================= DESTACADOS ================= */}
-      <section className="py-20">
+      <section id="trabajos" className="py-20 scroll-mt-24">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Productos destacados
@@ -153,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* ================= CTA FINAL ================= */}
-      <section className="bg-gray-100 py-20 text-center">
+      <section id="contacto" className="bg-gray-100 py-20 text-center scroll-mt-24">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
           ¿Listo para renovar tu espacio?
         </h2>

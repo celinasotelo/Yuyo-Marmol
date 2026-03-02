@@ -1,10 +1,18 @@
+export type MaterialType = "granito" | "marmol" | "silestone"
+
+export type ApplicationType =
+  | "Mesadas de baño"
+  | "Mesadas de cocina"
+  | "Pisos"
+  | "Revestimientos"
+
 export interface Product {
   id: string
   name: string
   description: string
-  category: string
   priceFrom: number
-  sizes: string[]
+  material: MaterialType
+  application: ApplicationType[]
   colors: string[]
   images: string[]
   featured?: boolean

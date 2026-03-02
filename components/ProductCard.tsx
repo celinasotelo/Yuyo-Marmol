@@ -25,16 +25,12 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* Contenido */}
         <div className="p-5">
-          <h2 className="text-xl font-semibold mb-2">
+          <h2 className="text-xl font-bold mb-2 text-gray-900">
             {product.name}
           </h2>
 
           <p className="text-gray-600 text-sm mb-3 line-clamp-2">
             {product.description}
-          </p>
-
-          <p className="text-lg font-bold text-black">
-            Desde ${product.priceFrom.toLocaleString()}
           </p>
         </div>
       </div>

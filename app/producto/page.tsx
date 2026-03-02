@@ -1,15 +1,25 @@
+import { notFound } from "next/navigation"
 import { products } from "@/data/product"
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
+export default async function ProductDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const product = products.find((item) => item.id === slug)
 
-  const product = products.find(p => p.id === params.slug)
-
-  if (!product) return <div>Producto no encontrado</div>
+  if (!product) {
+    notFound()
+  }
 
   return (
-    <div>
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-    </div>
+    <main className="mx-auto max-w-4xl px-6 py-12">
+      <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
+      <p className="mt-4 text-gray-600">{product.description}</p>
+      <p className="mt-6 text-xl font-semibold text-black">
+        Desde ${product.priceFrom.toLocaleString()}
+      </p>
+    </main>
   )
 }

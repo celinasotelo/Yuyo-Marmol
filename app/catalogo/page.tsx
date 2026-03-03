@@ -21,6 +21,11 @@ const materialConfig: { key: MaterialType; label: string; image: string }[] = [
     label: "Silestone",
     image: "/images/silestone.jpg",
   },
+  {
+    key: "neolith",
+    label: "Neolith",
+    image: "/images/neolith.jpg",
+  },
 ]
 
 type PriceFilter = "all" | "low" | "mid" | "high"

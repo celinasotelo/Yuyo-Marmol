@@ -1,4 +1,4 @@
-export type MaterialType = "granito" | "marmol" | "silestone"
+export type MaterialType = "granito" | "marmol" | "silestone" | "neolith"
 
 export type ApplicationType =
   | "Mesadas de baño"

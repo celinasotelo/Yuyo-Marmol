@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { Parkinsans, DM_Sans } from "next/font/google";
 
 const parkinsans = Parkinsans({
@@ -28,8 +29,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${parkinsans.variable} ${dm_sans.variable} font-sans`}>
-        <Navbar />
-        {children}
+        <div className="flex min-h-screen flex-col">
+          <Navbar />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

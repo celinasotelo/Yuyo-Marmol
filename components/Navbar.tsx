@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   { href: "/", label: "Inicio" },
@@ -11,8 +12,18 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 text-white">
-        <Link href="/" className="font-display text-xl font-semibold tracking-wide">
-          Yuyo Marmol
+        <Link
+          href="/"
+          className="flex items-center gap-3 font-display text-xl font-semibold tracking-wide"
+        >
+          <Image
+            src="/images/logo0.png"
+            alt="Logo Yuyo Marmol"
+            width={60}
+            height={60}
+            className="object-contain"
+          />
+          <span>Yuyo Marmol</span>
         </Link>
 
         <ul className="flex flex-wrap items-center gap-3 text-sm md:gap-8 md:text-base">

@@ -61,7 +61,7 @@ export const products: Product[] = [
     material: "marmol",
     application: ["Revestimientos", "Mesadas de baño"],
     colors: ["Blanco", "Gris"],
-    images: []
+    images: ["/images/blancocarrara.png"]
   },
   {
     id: "marmol-traventino-romano",

@@ -67,23 +67,23 @@ export default function Catalogo() {
   if (!selectedMaterial) {
     return (
       <main className="mx-auto max-w-6xl px-6 py-12">
-        <h1 className="mb-8 text-center text-3xl font-bold text-white md:text-4xl">
+        <h1 className="mb-8 text-center text-3xl font-bold text-[var(--primary-strong)] md:text-4xl">
           Productos por material
         </h1>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {materialConfig.map((material) => (
-            <div key={material.key} className="rounded-2xl bg-gray-50 p-4 shadow-sm">
+            <div key={material.key} className="rounded-2xl bg-[var(--surface)] p-4 shadow-sm border border-[#f4d2d9]">
               <img
                 src={material.image}
                 alt={material.label}
                 className="h-48 w-full rounded-xl object-cover"
               />
               <div className="px-2 pb-2 pt-4">
-                <h2 className="text-xl font-semibold text-gray-900">{material.label}</h2>
+                <h2 className="text-xl font-semibold text-[var(--primary-strong)]">{material.label}</h2>
                 <button
                   onClick={() => setSelectedMaterial(material.key)}
-                  className="mt-4 rounded-lg bg-black px-5 py-2 text-sm font-semibold text-white transition hover:bg-gray-800"
+                  className="mt-4 rounded-lg bg-[var(--primary)] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[var(--primary-strong)]"
                 >
                   Ver más
                 </button>
@@ -99,10 +99,10 @@ export default function Catalogo() {
         <main className="mx-auto max-w-6xl px-6 py-12">
       <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 md:text-4xl">
+          <h1 className="text-3xl font-bold text-[var(--primary-strong)] md:text-4xl">
             {materialConfig.find((m) => m.key === selectedMaterial)?.label}
           </h1>
-          <p className="mt-1 text-sm text-gray-600">Filtrá por color, aplicación y precio.</p>
+          <p className="mt-1 text-sm text-[#7a4b55]">Filtrá por color, aplicación y precio.</p>
         </div>
         <button
           onClick={() => {
@@ -111,17 +111,17 @@ export default function Catalogo() {
             setSelectedApplication("all")
             setSelectedPrice("all")
           }}
-          className="w-fit rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100"
+          className="w-fit rounded-lg border border-[#e8b9c3] px-4 py-2 text-sm font-medium text-[var(--primary)] transition hover:bg-[var(--surface-soft)]"
         >
           Volver a materiales
         </button>
       </div>
 
-      <section className="mb-8 grid grid-cols-1 gap-4 rounded-2xl bg-gray-100 p-5 md:grid-cols-3">
+      <section className="mb-8 grid grid-cols-1 gap-4 rounded-2xl bg-[var(--surface-soft)] p-5 border border-[#f4d2d9] md:grid-cols-3">
         <label className="text-sm font-medium text-gray-700">
           Color
           <select
-            className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2"
+            className="mt-2 w-full rounded-lg border border-[#e8b9c3] bg-white px-3 py-2"
             value={selectedColor}
             onChange={(e) => setSelectedColor(e.target.value)}
           >
@@ -137,7 +137,7 @@ export default function Catalogo() {
         <label className="text-sm font-medium text-gray-700">
           Aplicación
           <select
-            className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2"
+            className="mt-2 w-full rounded-lg border border-[#e8b9c3] bg-white px-3 py-2"
             value={selectedApplication}
             onChange={(e) => setSelectedApplication(e.target.value as "all" | ApplicationType)}
           >
@@ -153,7 +153,7 @@ export default function Catalogo() {
         <label className="text-sm font-medium text-gray-700">
           Precio
           <select
-            className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2"
+            className="mt-2 w-full rounded-lg border border-[#e8b9c3] bg-white px-3 py-2"
             value={selectedPrice}
             onChange={(e) => setSelectedPrice(e.target.value as PriceFilter)}
           >
@@ -172,7 +172,7 @@ export default function Catalogo() {
       </div>
 
       {filteredProducts.length === 0 && (
-        <p className="mt-8 text-center text-gray-600">
+        <p className="mt-8 text-center text-[#7a4b55]">
           No hay productos que coincidan con los filtros seleccionados.
         </p>
       )}

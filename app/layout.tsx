@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display, Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
 
-const playfair = Playfair_Display({
+import Navbar from "@/components/Navbar";
+import { Parkinsans, DM_Sans } from "next/font/google";
+
+const parkinsans = Parkinsans({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
-  variable: "--font-playfair",
+  variable: "--font-parkinsans",
 });
 
-const inter = Inter({
+const dm_sans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
+      <body className={`${parkinsans.variable} ${dm_sans.variable} font-sans`}>
         <Navbar />
         {children}
       </body>

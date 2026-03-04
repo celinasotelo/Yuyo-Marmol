@@ -15,5 +15,8 @@ export interface Product {
   application: ApplicationType[]
   colors: string[]
   images: string[]
+  hardness?: string
+  format?: string
+  thickness?: string
   featured?: boolean
 }

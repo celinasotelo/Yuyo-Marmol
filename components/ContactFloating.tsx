@@ -1,7 +1,7 @@
 export default function ContactFloating() {
   return (
     <a
-      href="https://wa.me/549XXXXXXXXX"
+      href="https://wa.me/5493794697318"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"

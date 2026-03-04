@@ -20,13 +20,13 @@ export default function Home() {
         </div>
 
         <div className="relative text-center max-w-3xl px-6">
-          <h1 className="font-display text-5xl font-bold">
-            Elegancia natural que transforma tu espacio
+          <h1 className="font-display text-4xl font-bold">
+            Descubrí los mejores productos para transformar tu espacio.
           </h1>
 
           <p className="text-lg md:text-xl mb-8 text-[#ffe6eb]">
             Mesadas, revestimientos y trabajos en mármol y granito
-            de alta calidad para transformar tus espacios.
+            de alta calidad.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -80,6 +80,7 @@ export default function Home() {
         </div>
       </section>
 
+{/* 
       <section className="py-20 bg-[var(--primary-strong)] text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">
@@ -119,10 +120,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+*/}
 
-      <section id="trabajos" className="py-20 scroll-mt-24">
+      <section id="trabajos" className="py-20 scroll-mt-24 bg-[var(--primary)]">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--primary-strong)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--surface-soft)]">
             Productos destacados
           </h2>
 
@@ -135,7 +137,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/catalogo"
-              className="bg-[var(--primary)] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[var(--primary-strong)] transition"
+              className="bg-[var(--surface-soft)] text-[var(--primary-strong)] px-8 py-3 rounded-xl font-semibold hover:bg-white transition"
             >
               Ver todo el catálogo
             </Link>

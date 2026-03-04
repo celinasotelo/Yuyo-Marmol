@@ -9,22 +9,22 @@ const materialConfig: { key: MaterialType; label: string; image: string }[] = [
   {
     key: "granito",
     label: "Granitos naturales",
-    image: "/images/granito.jpg", 
+    image: "/images/granito.png", 
   },
   {
     key: "marmol",
     label: "Mármoles",
-    image: "/images/marmol.jpg",
+    image: "/images/marmol.png",
   },
   {
     key: "silestone",
     label: "Silestone",
-    image: "/images/silestone.jpg",
+    image: "/images/silestone.webp",
   },
   {
     key: "neolith",
     label: "Neolith",
-    image: "/images/neolith.jpg",
+    image: "/images/neolith0.png",
   },
 ]
 

@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactFloating from "@/components/ContactFloating";
 import { Parkinsans, DM_Sans } from "next/font/google";
 
 const parkinsans = Parkinsans({
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Navbar />
           <div className="flex-1">{children}</div>
           <Footer />
+          <ContactFloating />
         </div>
       </body>
     </html>

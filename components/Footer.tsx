@@ -13,8 +13,8 @@ const contactLinks = [
   },
   {
     label: "Correo",
-    href: "mailto:contacto@tumarmoleria.com",
-    text: "contacto@tumarmoleria.com",
+    href: "mailto:yuyodemarmol@hotmail.com.ar",
+    text: "yuyodemarmol@hotmail.com.ar",
   },
 ];
 

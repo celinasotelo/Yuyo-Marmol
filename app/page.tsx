@@ -156,11 +156,11 @@ export default function Home() {
         </p>
 
         <a
-          href="https://wa.me/549XXXXXXXXX"
+          href="https://wa.me/5493794697318"
           target="_blank"
           className="bg-[var(--accent)] text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-[var(--primary)] transition"
         >
-          Solicitar presupuesto
+          Solicitar presupuesto 
         </a>
       </section>
     </main>

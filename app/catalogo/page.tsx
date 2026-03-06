@@ -28,13 +28,10 @@ const materialConfig: { key: MaterialType; label: string; image: string }[] = [
   },
 ]
 
-type PriceFilter = "all" | "low" | "mid" | "high"
-
 export default function Catalogo() {
   const [selectedMaterial, setSelectedMaterial] = useState<MaterialType | null>(null)
   const [selectedColor, setSelectedColor] = useState("all")
   const [selectedApplication, setSelectedApplication] = useState<"all" | ApplicationType>("all")
-  const [selectedPrice, setSelectedPrice] = useState<PriceFilter>("all")
 
   const materialProducts = useMemo(
     () => products.filter((p) => p.material === selectedMaterial),
@@ -59,15 +56,9 @@ export default function Catalogo() {
       const byApplication =
         selectedApplication === "all" || product.application.includes(selectedApplication)
 
-      const byPrice =
-        selectedPrice === "all" ||
-        (selectedPrice === "low" && product.priceFrom < 400000) ||
-        (selectedPrice === "mid" && product.priceFrom >= 400000 && product.priceFrom <= 550000) ||
-        (selectedPrice === "high" && product.priceFrom > 550000)
-
-      return byColor && byApplication && byPrice
+      return byColor && byApplication 
     })
-  }, [materialProducts, selectedColor, selectedApplication, selectedPrice])
+  }, [materialProducts, selectedColor, selectedApplication])
 
   if (!selectedMaterial) {
     return (
@@ -114,7 +105,6 @@ export default function Catalogo() {
             setSelectedMaterial(null)
             setSelectedColor("all")
             setSelectedApplication("all")
-            setSelectedPrice("all")
           }}
           className="w-fit rounded-lg border border-[#e8b9c3] px-4 py-2 text-sm font-medium text-[var(--primary)] transition hover:bg-[var(--surface-soft)]"
         >
@@ -122,7 +112,7 @@ export default function Catalogo() {
         </button>
       </div>
 
-      <section className="mb-8 grid grid-cols-1 gap-4 rounded-2xl bg-[var(--surface-soft)] p-5 border border-[#f4d2d9] md:grid-cols-3">
+      <section className="mb-8 inline-flex flex-wrap gap-4 rounded-2xl bg-[var(--surface-soft)] p-5 border border-[var(--primary)]">
         <label className="text-sm font-medium text-gray-700">
           Color
           <select
@@ -152,20 +142,6 @@ export default function Catalogo() {
                 {application}
               </option>
             ))}
-          </select>
-        </label>
-
-        <label className="text-sm font-medium text-gray-700">
-          Precio
-          <select
-            className="mt-2 w-full rounded-lg border border-[#e8b9c3] bg-white px-3 py-2"
-            value={selectedPrice}
-            onChange={(e) => setSelectedPrice(e.target.value as PriceFilter)}
-          >
-            <option value="all">Todos</option>
-            <option value="low">Menos de $400.000</option>
-            <option value="mid">$400.000 a $550.000</option>
-            <option value="high">Más de $550.000</option>
           </select>
         </label>
       </section>

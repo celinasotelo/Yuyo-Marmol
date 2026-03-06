@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 
-type Material = "todos" | "marmol" | "granito" | "silestone" | "neolith" | "otros";
+type Material = "todos" | "marmol" | "granito" | "silestone" | "neolith" | "restauraciones";
 
 type WorkImage = {
   src: string;
@@ -16,7 +16,7 @@ const filters: { label: string; value: Material }[] = [
   { label: "Granito", value: "granito" },
   { label: "Silestone", value: "silestone" },
   { label: "Neolith", value: "neolith" },
-  { label: "Otros", value: "otros" },
+  { label: "Restauraciones", value: "restauraciones" },
 ];
 
 const workImages: WorkImage[] = [
@@ -42,6 +42,11 @@ const workImages: WorkImage[] = [
   { src: "/images/trabajo6-neolith.jpeg", material: "neolith" },
   { src: "/images/trabajo7-granito.jpeg", material: "granito" },
   { src: "/images/trabajo8-granito.jpeg", material: "granito" },
+  { src: "/images/rest1.jpeg", material: "restauraciones" },
+  { src: "/images/rest2.jpeg", material: "restauraciones" },
+  { src: "/images/rest3.jpeg", material: "restauraciones" },
+  { src: "/images/rest4.jpeg", material: "restauraciones" },
+  { src: "/images/rest5.jpeg", material: "restauraciones" },
   
 ];
 

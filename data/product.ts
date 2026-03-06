@@ -75,6 +75,134 @@ export const products: Product[] = [
     thickness: "2 cm y 3 cm",
   },
   {
+    id: "granito-gris-perla",
+    name: "Granito Gris Perla",
+    description:
+      "Granito de tonalidad gris clara con vetas suaves y textura uniforme. Ideal para mesadas y pisos por su versatilidad estética y excelente resistencia al uso diario.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Pisos"],
+    colors: ["Grises"],
+    images: ["/images/grisperla0.png"],
+    hardness: "Muy alta resistencia al desgaste",
+    format: "Placas grandes y cortes a medida",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "granito-franco-veteado",
+    name: "Granito Franco Veteado",
+    description:
+      "Granito de base clara con vetas marcadas que aportan carácter y movimiento visual. Perfecto para espacios que buscan elegancia natural y durabilidad.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Beige", "Grises"],
+    images: ["/images/francoveteado.png"],
+    hardness: "Alta resistencia al impacto y rayaduras",
+    format: "Placas pulidas y satinadas",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "granito-negro-via-lactea",
+    name: "Granito Negro Vía Láctea",
+    description:
+      "Granito negro profundo con vetas blancas irregulares que evocan un efecto galáctico. Ideal para diseños modernos y sofisticados.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Negros"],
+    images: ["/images/negrovialactea.png"],
+    hardness: "Muy alta resistencia al calor y manchas",
+    format: "Placas pulidas",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "granito-negro-leather",
+    name: "Granito Negro Leather",
+    description:
+      "Granito negro con acabado leather (texturado mate) que aporta un estilo moderno y elegante. Excelente opción para mesadas contemporáneas.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Mesadas de baño"],
+    colors: ["Negros"],
+    images: ["/images/negroleather.png"],
+    hardness: "Alta resistencia al uso intensivo",
+    format: "Placas con acabado leather",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "granito-negro-sultan",
+    name: "Granito Negro Sultán",
+    description:
+      "Granito negro intenso con sutiles variaciones minerales que aportan profundidad visual. Ideal para espacios elegantes y de alto impacto.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Negros"],
+    images: ["/images/negrosultan.png"],
+    hardness: "Muy alta resistencia estructural",
+    format: "Placas pulidas y cortes especiales",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "granito-negro-absoluto-imperial",
+    name: "Granito Negro Absoluto Imperial",
+    description:
+      "Granito negro uniforme de apariencia sólida y sofisticada. Muy utilizado en proyectos modernos por su estética minimalista y gran resistencia.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Pisos"],
+    colors: ["Negros"],
+    images: ["/images/negroabsolutoimperial.png"],
+    hardness: "Extrema resistencia al impacto y rayaduras",
+    format: "Placas grandes pulidas",
+    thickness: "2 cm y 3 cm",
+    featured: true,
+  },
+  {
+    id: "granito-negro-marquino",
+    name: "Granito Negro Marquino",
+    description:
+      "Granito negro con vetas blancas finas que generan contraste elegante. Ideal para diseños sofisticados y ambientes contemporáneos.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Negros"],
+    images: ["/images/negromarquino.png"],
+    hardness: "Alta resistencia al desgaste",
+    format: "Placas pulidas",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "granito-blanco-pitaya",
+    name: "Granito Blanco Pitaya",
+    description:
+      "Granito de fondo claro con detalles minerales que aportan luminosidad y amplitud visual. Perfecto para cocinas modernas y espacios amplios.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Blancos"],
+    images: ["/images/blancopitaya.png"],
+    hardness: "Muy alta resistencia al uso diario",
+    format: "Placas pulidas y satinadas",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "granito-azul-labrador",
+    name: "Granito Azul Labrador",
+    description:
+      "Granito oscuro con reflejos azulados y efecto iridiscente natural. Aporta un diseño exclusivo y sofisticado a cualquier ambiente.",
+    priceFrom: 0,
+    material: "granito",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Azules", "Negros"],
+    images: ["/images/azullabrador.png"],
+    hardness: "Muy alta resistencia al impacto y calor",
+    format: "Placas pulidas",
+    thickness: "2 cm y 3 cm",
+    featured: true,
+  },
+  {
     id: "marmol-blanco-carrara",
     name: "Mármol Blanco Carrara",
     description:
@@ -97,7 +225,7 @@ export const products: Product[] = [
     material: "marmol",
     application: ["Revestimientos", "Pisos"],
     colors: ["Beige"],
-    images: [],
+    images: ["/images/traventinoromano0.png"],
     hardness: "Resistencia media",
     format: "Placas y baldosas",
     thickness: "2 cm",
@@ -111,10 +239,81 @@ export const products: Product[] = [
     material: "marmol",
     application: ["Revestimientos"],
     colors: ["Verde"],
-    images: [],
+    images: ["/images/verdedelbosque.png"],
     hardness: "Resistencia media",
     format: "Placas decorativas",
     thickness: "2 cm",
+  },
+  {
+    id: "marmol-traventino-brasil",
+    name: "Mármol Traventino Brasil",
+    description:
+      "Mármol de tonalidad beige cálida con vetas suaves y estructura porosa característica del travertino. Ideal para revestimientos y baños elegantes con estilo clásico o natural.",
+    priceFrom: 0,
+    material: "marmol",
+    application: ["Mesadas de baño", "Revestimientos", "Pisos"],
+    colors: ["Beige"],
+    images: ["/images/traventinobrasil.png"],
+    hardness: "Buena resistencia en interiores",
+    format: "Placas y cortes a medida",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "marmol-blanco-turco",
+    name: "Mármol Blanco Turco",
+    description:
+      "Mármol blanco luminoso con vetas grises delicadas que aportan sofisticación y amplitud visual. Muy utilizado en baños y revestimientos de alta gama.",
+    priceFrom: 0,
+    material: "marmol",
+    application: ["Mesadas de baño", "Revestimientos"],
+    colors: ["Blancos"],
+    images: ["/images/blancoturco.png"],
+    hardness: "Resistencia media, ideal para interiores",
+    format: "Placas pulidas",
+    thickness: "2 cm y 3 cm",
+    featured: true,
+  },
+  {
+    id: "marmol-grigio-nuvola",
+    name: "Mármol Grigio Nuvola",
+    description:
+      "Mármol gris con vetas suaves y efecto nuboso que aporta modernidad y elegancia. Perfecto para ambientes contemporáneos y minimalistas.",
+    priceFrom: 0,
+    material: "marmol",
+    application: ["Mesadas de baño", "Revestimientos", "Pisos"],
+    colors: ["Grises"],
+    images: ["/images/grigionuvola.png"],
+    hardness: "Resistencia adecuada para uso interior",
+    format: "Placas grandes y cortes especiales",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "marmol-traventino-new-beige-galala",
+    name: "Mármol Traventino New Beige Galala",
+    description:
+      "Mármol travertino de tono beige claro con vetas naturales que brindan calidez y textura. Ideal para revestimientos y proyectos residenciales elegantes.",
+    priceFrom: 0,
+    material: "marmol",
+    application: ["Revestimientos", "Pisos", "Mesadas de baño"],
+    colors: ["Beige"],
+    images: ["/images/traventinonewbeigegalala.png"],
+    hardness: "Resistencia media, recomendado para interiores",
+    format: "Placas y terminaciones pulidas o satinadas",
+    thickness: "2 cm y 3 cm",
+  },
+  {
+    id: "marmol-marron-del-bosque",
+    name: "Mármol Marrón del Bosque",
+    description:
+      "Mármol de tonalidad marrón profunda con vetas orgánicas que evocan la naturaleza. Aporta carácter y distinción en baños y revestimientos decorativos.",
+    priceFrom: 0,
+    material: "marmol",
+    application: ["Mesadas de baño", "Revestimientos"],
+    colors: ["Marrones"],
+    images: ["/images/marrondelbosque.png"],
+    hardness: "Resistencia media, ideal para interiores",
+    format: "Placas pulidas y cortes a medida",
+    thickness: "2 cm y 3 cm",
   },
   {
     id: "silestone-blanco",
@@ -125,6 +324,48 @@ export const products: Product[] = [
     material: "silestone",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Blanco"],
+    images: [],
+    hardness: "Muy alta resistencia a manchas",
+    format: "Tablas industriales",
+    thickness: "1.2 cm, 2 cm y 3 cm",
+  },
+  {
+    id: "silestone-blanco-norte",
+    name: "Silestone Blanco Norte",
+    description:
+      "Superficie de cuarzo de tono blanco frío y uniforme que aporta luminosidad y amplitud visual. Ideal para cocinas modernas que buscan estética limpia con gran resistencia al uso diario.",
+    priceFrom: 0,
+    material: "silestone",
+    application: ["Mesadas de cocina", "Mesadas de baño"],
+    colors: ["Blanco"],
+    images: [],
+    hardness: "Muy alta resistencia a manchas y rayaduras",
+    format: "Tablas industriales",
+    thickness: "1.2 cm, 2 cm y 3 cm",
+  },
+  {
+    id: "silestone-aluminio",
+    name: "Silestone Aluminio",
+    description:
+      "Superficie de cuarzo de tonalidad gris aluminio con estética moderna e industrial. Perfecta para cocinas contemporáneas y espacios minimalistas que requieren durabilidad y fácil mantenimiento.",
+    priceFrom: 0,
+    material: "silestone",
+    application: ["Mesadas de cocina", "Mesadas de baño"],
+    colors: ["Gris"],
+    images: [],
+    hardness: "Alta resistencia al desgaste y manchas",
+    format: "Tablas industriales",
+    thickness: "1.2 cm, 2 cm y 3 cm",
+  },
+  {
+    id: "silestone-crema",
+    name: "Silestone Crema",
+    description:
+      "Superficie de cuarzo de tono crema suave que aporta calidez y elegancia a cualquier ambiente. Ideal para cocinas y baños con diseño clásico o contemporáneo.",
+    priceFrom: 0,
+    material: "silestone",
+    application: ["Mesadas de cocina", "Mesadas de baño"],
+    colors: ["Beige", "Crema"],
     images: [],
     hardness: "Muy alta resistencia a manchas",
     format: "Tablas industriales",
@@ -158,41 +399,462 @@ export const products: Product[] = [
     format: "Tablas de gran formato",
     thickness: "2 cm y 3 cm",
   },
+  {
+    id: "neolith-estatuario",
+    name: "Neolith Estatuario",
+    description:
+      "Superficie sinterizada inspirada en el mármol Statuario, con fondo blanco y vetas grises elegantes. Ideal para cocinas modernas y revestimientos de alta gama por su resistencia al calor y a las manchas.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Blanco", "Gris"],
+    images: [],
+    hardness: "Altísima resistencia al calor, rayaduras y manchas",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-calatorao",
+    name: "Neolith Calatorao",
+    description:
+      "Superficie sinterizada oscura con vetas blancas irregulares que generan un fuerte contraste visual. Perfecta para diseños sofisticados y contemporáneos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Negro", "Gris"],
+    images: [],
+    hardness: "Muy alta resistencia al desgaste y calor",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-calacatta",
+    name: "Neolith Calacatta",
+    description:
+      "Superficie sinterizada inspirada en el mármol Calacatta, con fondo blanco brillante y vetas grises elegantes. Aporta estética premium con gran durabilidad.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Blanco", "Gris"],
+    images: [],
+    hardness: "Alta resistencia a impactos, calor y manchas",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-blanco-carrara-bc02",
+    name: "Neolith Blanco Carrara BC02",
+    description:
+      "Superficie sinterizada que replica el clásico mármol Carrara con fondo blanco y vetas grises suaves. Ideal para cocinas luminosas y elegantes.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Blanco", "Gris"],
+    images: [],
+    hardness: "Muy alta resistencia al calor y rayaduras",
+    format: "Tablas industriales de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-blanco-carrara-bc01",
+    name: "Neolith Blanco Carrara BC01",
+    description:
+      "Superficie sinterizada de apariencia clásica inspirada en el mármol Carrara, con vetas delicadas que aportan elegancia y luminosidad.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Blanco", "Gris"],
+    images: [],
+    hardness: "Alta resistencia al uso intensivo",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-onix-traslucent",
+    name: "Neolith Onix Traslucent",
+    description:
+      "Superficie sinterizada inspirada en el ónix natural con efecto traslúcido. Permite iluminación posterior creando piezas decorativas únicas y de alto impacto visual.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Revestimientos", "Mesadas de baño"],
+    colors: ["Beige", "Ámbar"],
+    images: [],
+    hardness: "Alta resistencia al calor y manchas",
+    format: "Tablas de gran formato",
+    thickness: "6 mm y 12 mm",
+    featured: true,
+  },
+  {
+    id: "neolith-calacatta-cold",
+    name: "Neolith Calacatta Cold",
+    description:
+      "Superficie sinterizada con base blanca y vetas grises frías que aportan una estética moderna y sofisticada. Ideal para cocinas contemporáneas.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Blanco", "Gris"],
+    images: [],
+    hardness: "Muy alta resistencia a rayaduras y calor",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-strata-argentum",
+    name: "Neolith Strata Argentum",
+    description:
+      "Superficie sinterizada con efecto de capas minerales en tonos grises que generan profundidad visual. Ideal para diseños arquitectónicos modernos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Gris"],
+    images: [],
+    hardness: "Altísima resistencia al desgaste",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-pulpis",
+    name: "Neolith Pulpis",
+    description:
+      "Superficie sinterizada inspirada en el mármol Pulpis con base marrón oscura y vetas claras. Aporta elegancia y calidez a cocinas y revestimientos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Marrón"],
+    images: [],
+    hardness: "Alta resistencia a impactos y calor",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-negro-marquina",
+    name: "Neolith Negro Marquina",
+    description:
+      "Superficie sinterizada inspirada en el mármol Nero Marquina, con fondo negro profundo y vetas blancas contrastantes. Ideal para diseños modernos y elegantes.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Negro"],
+    images: [],
+    hardness: "Altísima resistencia al calor, manchas y rayaduras",
+    format: "Tablas industriales de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+    featured: true,
+  },
+  {
+    id: "neolith-mirage",
+    name: "Neolith Mirage",
+    description:
+      "Superficie sinterizada de tono neutro con textura suave inspirada en piedras naturales. Ideal para ambientes modernos que buscan elegancia y resistencia.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Beige", "Gris"],
+    images: [],
+    hardness: "Alta resistencia al calor, manchas y rayaduras",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-krater",
+    name: "Neolith Krater",
+    description:
+      "Superficie sinterizada de tono oscuro con textura mineral inspirada en roca volcánica. Perfecta para diseños contemporáneos con carácter.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Gris oscuro"],
+    images: [],
+    hardness: "Muy alta resistencia al desgaste y calor",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-retrostone",
+    name: "Neolith Retrostone",
+    description:
+      "Superficie sinterizada inspirada en piedra natural envejecida con estética cálida y sofisticada. Ideal para revestimientos y proyectos arquitectónicos modernos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Revestimientos", "Mesadas de baño"],
+    colors: ["Beige"],
+    images: [],
+    hardness: "Alta resistencia al uso intensivo",
+    format: "Tablas de gran formato",
+    thickness: "6 mm y 12 mm",
+  },
+  {
+    id: "neolith-arena",
+    name: "Neolith Arena",
+    description:
+      "Superficie sinterizada de tono arena claro que aporta luminosidad y calidez a cocinas y revestimientos. Ideal para ambientes minimalistas y naturales.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Beige"],
+    images: [],
+    hardness: "Alta resistencia al calor y manchas",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-basalt-beige",
+    name: "Neolith Basalt Beige",
+    description:
+      "Superficie sinterizada inspirada en piedra basáltica con tonalidad beige suave. Combina estética natural con gran resistencia.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Beige"],
+    images: [],
+    hardness: "Muy alta resistencia a rayaduras y calor",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-pietra-di-osso",
+    name: "Neolith Pietra di Osso",
+    description:
+      "Superficie sinterizada inspirada en piedra italiana con textura elegante y tonalidades claras. Ideal para cocinas sofisticadas y revestimientos contemporáneos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos", "Mesadas de baño"],
+    colors: ["Beige", "Gris claro"],
+    images: [],
+    hardness: "Altísima resistencia al impacto y calor",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-barro",
+    name: "Neolith Barro",
+    description:
+      "Superficie sinterizada de tono terracota inspirado en arcilla natural. Aporta calidez y personalidad a espacios modernos y rústicos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Revestimientos", "Mesadas de baño"],
+    colors: ["Terracota", "Marrón"],
+    images: [],
+    hardness: "Alta resistencia al desgaste",
+    format: "Tablas de gran formato",
+    thickness: "6 mm y 12 mm",
+  },
+  {
+    id: "neolith-basalt-grey",
+    name: "Neolith Basalt Grey",
+    description:
+      "Superficie sinterizada gris oscuro inspirada en roca volcánica. Ideal para cocinas modernas de estilo industrial.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Gris"],
+    images: [],
+    hardness: "Muy alta resistencia a manchas y calor",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-lava",
+    name: "Neolith Lava",
+    description:
+      "Superficie sinterizada de tono oscuro con textura mineral inspirada en lava volcánica. Perfecta para diseños arquitectónicos modernos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Negro", "Gris oscuro"],
+    images: [],
+    hardness: "Altísima resistencia al desgaste y calor",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-cement",
+    name: "Neolith Cement",
+    description:
+      "Superficie sinterizada con efecto cemento contemporáneo. Muy utilizada en cocinas modernas y espacios de estilo industrial.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Gris"],
+    images: [],
+    hardness: "Alta resistencia a rayaduras y manchas",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-phedra",
+    name: "Neolith Phedra",
+    description:
+      "Superficie sinterizada inspirada en piedra natural con textura suave y tonos neutros. Aporta elegancia y sobriedad a cualquier ambiente.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Beige", "Gris"],
+    images: [],
+    hardness: "Muy alta resistencia al calor y desgaste",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-beton",
+    name: "Neolith Beton",
+    description:
+      "Superficie sinterizada con estética de hormigón moderno. Ideal para proyectos arquitectónicos contemporáneos y minimalistas.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Gris"],
+    images: [],
+    hardness: "Alta resistencia al uso intensivo",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-concrete-taupe",
+    name: "Neolith Concrete Taupe",
+    description:
+      "Superficie sinterizada con efecto cemento en tono taupe cálido. Ideal para cocinas y revestimientos modernos que buscan una estética industrial elegante.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Beige", "Gris"],
+    images: [],
+    hardness: "Alta resistencia al calor, manchas y rayaduras",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-piedra-di-luna",
+    name: "Neolith Piedra di Luna",
+    description:
+      "Superficie sinterizada inspirada en piedra natural clara con textura suave y elegante. Ideal para cocinas luminosas y revestimientos contemporáneos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Beige", "Gris claro"],
+    images: [],
+    hardness: "Muy alta resistencia al desgaste y calor",
+    format: "Tablas industriales de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-pietra-di-piombo",
+    name: "Neolith Pietra di Piombo",
+    description:
+      "Superficie sinterizada gris oscuro inspirada en piedra italiana natural. Aporta elegancia y sobriedad en cocinas modernas y espacios arquitectónicos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Gris oscuro"],
+    images: [],
+    hardness: "Altísima resistencia al calor y rayaduras",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-zaha-stone",
+    name: "Neolith Zaha Stone",
+    description:
+      "Superficie sinterizada inspirada en piedra natural con vetas sutiles que aportan profundidad visual. Ideal para proyectos arquitectónicos contemporáneos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos", "Mesadas de baño"],
+    colors: ["Beige", "Gris"],
+    images: [],
+    hardness: "Muy alta resistencia al impacto y calor",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-basalt-black",
+    name: "Neolith Basalt Black",
+    description:
+      "Superficie sinterizada de color negro profundo inspirada en roca basáltica. Perfecta para cocinas modernas de estilo elegante o industrial.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Negro"],
+    images: [],
+    hardness: "Altísima resistencia al calor, manchas y rayaduras",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-nero-zimbabwe",
+    name: "Neolith Nero Zimbabwe",
+    description:
+      "Superficie sinterizada inspirada en el clásico granito negro Zimbabwe. Ofrece estética sofisticada con gran resistencia para cocinas modernas.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Negro"],
+    images: [],
+    hardness: "Muy alta resistencia al desgaste y calor",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-pierre-bleue",
+    name: "Neolith Pierre Bleue",
+    description:
+      "Superficie sinterizada inspirada en la piedra azul belga con textura natural elegante. Ideal para proyectos arquitectónicos de alta gama.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Revestimientos"],
+    colors: ["Gris", "Azulado"],
+    images: [],
+    hardness: "Alta resistencia al uso intensivo",
+    format: "Tablas de gran formato",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
+  {
+    id: "neolith-aspen-grey",
+    name: "Neolith Aspen Grey",
+    description:
+      "Superficie sinterizada gris claro con estética minimalista y moderna. Ideal para cocinas luminosas y ambientes contemporáneos.",
+    priceFrom: 0,
+    material: "neolith",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Gris claro"],
+    images: [],
+    hardness: "Alta resistencia a manchas y calor",
+    format: "Tablas industriales",
+    thickness: "6 mm, 12 mm y 20 mm",
+  },
 ]
 
-/* 
+/*
+NEOLITH
+estatuario
+calatorao
+calacatta
+blanco carrara bc02
+blanco carrara bc01
+onix traslucent
+calacatta cold
+strata argentum
+pulpis
+negro marquina
 
-Granitos naturales:
-Rosa de salto
-San Felipe 
-Gris Mara 
-Gris perla
-Franco veteado 
-Negro brasil 
-Negro vía láctea 
-Negro Leather 
-Negro sultán 
-Negro absoluto imperial
-Negro marquino 
-Blanco pitaya 
-Coffee brown 
-Azul labrador 
+mirage
+krater
+restrostone
+arena
+basalt beige
+pietra di osso
+barro
+basalt grey
+lava
+cement
+phedra
+beton
 
-
-Mármoles:
-Traventino brasil 
-Blanco turco 
-Blanco carrara
-Grigio nuvola 
-Traventino romano
-Traventino new beige galala 
-Marrón del bosque
-Verde del bosque
-Silestone:
-Blanco 
-Blanco norte 
-Aluminio
-Crema 
-Rojo 
-Calacatta classic 
+concrete taupe
+piedra di luna
+pietra di piombo
+zaha stone
+basalt black
+nero zimbabwe
+pierre bleue
+aspen grey
 */

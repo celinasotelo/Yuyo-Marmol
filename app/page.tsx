@@ -80,48 +80,6 @@ export default function Home() {
         </div>
       </section>
 
-{/* 
-      <section className="py-20 bg-[var(--primary-strong)] text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            Promociones activas
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-[#7a1328] p-8 rounded-2xl hover:scale-105 transition">
-              <h3 className="text-xl font-semibold mb-4">
-                10% OFF en mesadas negras
-              </h3>
-              <p className="text-[#ffd7df] mb-4">
-                Válido hasta fin de mes.
-              </p>
-              <Link
-                href="/catalogo"
-                className="inline-block mt-4 bg-white text-[var(--primary-strong)] px-6 py-2 rounded-lg font-medium"
-              >
-                Ver productos
-              </Link>
-            </div>
-
-            <div className="bg-[#7a1328] p-8 rounded-2xl hover:scale-105 transition">
-              <h3 className="text-xl font-semibold mb-4">
-                Instalación bonificada
-              </h3>
-              <p className="text-[#ffd7df] mb-4">
-                En compras superiores a determinado monto.
-              </p>
-              <Link
-                href="/catalogo"
-                className="inline-block mt-4 bg-white text-[var(--primary-strong)] px-6 py-2 rounded-lg font-medium"
-              >
-                Consultar
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-*/}
-
       <section id="trabajos" className="py-20 scroll-mt-24 bg-[var(--primary)]">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--surface-soft)]">

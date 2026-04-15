@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
-import { products } from "@/data/product"
+import { createClient } from "@/lib/supabase/server"
+import { mapProduct } from "@/lib/supabase/mappers"
 import ProductDetailView from "@/components/ProductDetailView"
 
 export default async function ProductDetailPage({
@@ -8,11 +9,15 @@ export default async function ProductDetailPage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const product = products.find((item) => item.id === slug)
+  const supabase = await createClient()
 
-  if (!product) {
-    notFound()
-  }
+  const { data } = await supabase
+    .from("products")
+    .select("*")
+    .eq("slug", slug)
+    .single()
 
-  return <ProductDetailView product={product} />
+  if (!data) notFound()
+
+  return <ProductDetailView product={mapProduct(data)} />
 }

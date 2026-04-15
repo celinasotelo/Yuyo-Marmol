@@ -6,7 +6,6 @@ export const products: Product[] = [
     name: "Granito Rosa de Salto",
     description:
       "Granito natural de tonalidad rosada con vetas marrones y rojizas, ideal para quienes buscan calidez y resistencia en un mismo material. Su excelente dureza y baja absorción lo convierten en una opción perfecta para mesadas de cocina, baños y revestimientos tanto interiores como exteriores.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Marrones/Rojos"],
@@ -21,7 +20,6 @@ export const products: Product[] = [
     name: "Granito San Felipe",
     description:
       "Granito natural de tonalidad gris uniforme, muy elegido para proyectos modernos y minimalistas. Su durabilidad y fácil mantenimiento lo hacen ideal para mesadas de cocina y revestimientos verticales de alto tránsito.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Grises"],
@@ -36,7 +34,6 @@ export const products: Product[] = [
     name: "Granito Gris Mara",
     description:
       "Granito gris clásico de textura homogénea y gran durabilidad. Muy utilizado en cocinas, pisos y espacios comerciales por su resistencia al desgaste y su estética sobria y elegante.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Pisos"],
     colors: ["Grises"],
@@ -51,7 +48,6 @@ export const products: Product[] = [
     name: "Granito Negro Brasil",
     description:
       "Granito negro intenso con acabado pulido brillante que aporta elegancia y sofisticación. Ideal para mesadas de cocina y baño de estilo moderno o industrial, combinando diseño con máxima resistencia.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Negros"],
@@ -65,7 +61,6 @@ export const products: Product[] = [
     name: "Granito Coffee Brown",
     description:
       "Granito marrón oscuro con vetas negras, ideal para ambientes cálidos y elegantes. Su estructura compacta lo hace apto para cocinas, pisos y espacios de alto tránsito.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Pisos"],
     colors: ["Marrones/Rojos"],
@@ -79,7 +74,6 @@ export const products: Product[] = [
     name: "Granito Gris Perla",
     description:
       "Granito de tonalidad gris clara con vetas suaves y textura uniforme. Ideal para mesadas y pisos por su versatilidad estética y excelente resistencia al uso diario.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Mesadas de baño", "Pisos"],
     colors: ["Grises"],
@@ -93,7 +87,6 @@ export const products: Product[] = [
     name: "Granito Franco Veteado",
     description:
       "Granito de base clara con vetas marcadas que aportan carácter y movimiento visual. Perfecto para espacios que buscan elegancia natural y durabilidad.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Beige", "Grises"],
@@ -107,7 +100,6 @@ export const products: Product[] = [
     name: "Granito Negro Vía Láctea",
     description:
       "Granito negro profundo con vetas blancas irregulares que evocan un efecto galáctico. Ideal para diseños modernos y sofisticados.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Negros"],
@@ -121,7 +113,6 @@ export const products: Product[] = [
     name: "Granito Negro Leather",
     description:
       "Granito negro con acabado leather (texturado mate) que aporta un estilo moderno y elegante. Excelente opción para mesadas contemporáneas.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Negros"],
@@ -135,7 +126,6 @@ export const products: Product[] = [
     name: "Granito Negro Sultán",
     description:
       "Granito negro intenso con sutiles variaciones minerales que aportan profundidad visual. Ideal para espacios elegantes y de alto impacto.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Negros"],
@@ -149,7 +139,6 @@ export const products: Product[] = [
     name: "Granito Negro Absoluto Imperial",
     description:
       "Granito negro uniforme de apariencia sólida y sofisticada. Muy utilizado en proyectos modernos por su estética minimalista y gran resistencia.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Mesadas de baño", "Pisos"],
     colors: ["Negros"],
@@ -164,7 +153,6 @@ export const products: Product[] = [
     name: "Granito Negro Marquino",
     description:
       "Granito negro con vetas blancas finas que generan contraste elegante. Ideal para diseños sofisticados y ambientes contemporáneos.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Negros"],
@@ -178,7 +166,6 @@ export const products: Product[] = [
     name: "Granito Blanco Pitaya",
     description:
       "Granito de fondo claro con detalles minerales que aportan luminosidad y amplitud visual. Perfecto para cocinas modernas y espacios amplios.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Blancos"],
@@ -192,7 +179,6 @@ export const products: Product[] = [
     name: "Granito Azul Labrador",
     description:
       "Granito oscuro con reflejos azulados y efecto iridiscente natural. Aporta un diseño exclusivo y sofisticado a cualquier ambiente.",
-    priceFrom: 0,
     material: "granito",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Azules", "Negros"],
@@ -207,7 +193,6 @@ export const products: Product[] = [
     name: "Mármol Blanco Carrara",
     description:
       "Mármol clásico de origen italiano con fondo blanco y delicadas vetas grises. Muy apreciado en diseño de interiores por su elegancia atemporal. Ideal para revestimientos y mesadas de baño de estilo sofisticado.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Revestimientos", "Mesadas de baño"],
     colors: ["Blanco", "Gris"],
@@ -221,7 +206,6 @@ export const products: Product[] = [
     name: "Mármol Traventino Romano",
     description:
       "Mármol travertino de tonos beige cálidos con vetas naturales. Ideal para pisos y revestimientos que buscan un estilo clásico y elegante con textura distintiva.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Revestimientos", "Pisos"],
     colors: ["Beige"],
@@ -235,7 +219,6 @@ export const products: Product[] = [
     name: "Mármol Verde del Bosque",
     description:
       "Mármol verde intenso con vetas marcadas que aportan personalidad y distinción. Recomendado para revestimientos decorativos y espacios exclusivos.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Revestimientos"],
     colors: ["Verde"],
@@ -249,7 +232,6 @@ export const products: Product[] = [
     name: "Mármol Traventino Brasil",
     description:
       "Mármol de tonalidad beige cálida con vetas suaves y estructura porosa característica del travertino. Ideal para revestimientos y baños elegantes con estilo clásico o natural.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Mesadas de baño", "Revestimientos", "Pisos"],
     colors: ["Beige"],
@@ -263,7 +245,6 @@ export const products: Product[] = [
     name: "Mármol Blanco Turco",
     description:
       "Mármol blanco luminoso con vetas grises delicadas que aportan sofisticación y amplitud visual. Muy utilizado en baños y revestimientos de alta gama.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Mesadas de baño", "Revestimientos"],
     colors: ["Blancos"],
@@ -278,7 +259,6 @@ export const products: Product[] = [
     name: "Mármol Grigio Nuvola",
     description:
       "Mármol gris con vetas suaves y efecto nuboso que aporta modernidad y elegancia. Perfecto para ambientes contemporáneos y minimalistas.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Mesadas de baño", "Revestimientos", "Pisos"],
     colors: ["Grises"],
@@ -292,7 +272,6 @@ export const products: Product[] = [
     name: "Mármol Traventino New Beige Galala",
     description:
       "Mármol travertino de tono beige claro con vetas naturales que brindan calidez y textura. Ideal para revestimientos y proyectos residenciales elegantes.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Revestimientos", "Pisos", "Mesadas de baño"],
     colors: ["Beige"],
@@ -306,7 +285,6 @@ export const products: Product[] = [
     name: "Mármol Marrón del Bosque",
     description:
       "Mármol de tonalidad marrón profunda con vetas orgánicas que evocan la naturaleza. Aporta carácter y distinción en baños y revestimientos decorativos.",
-    priceFrom: 0,
     material: "marmol",
     application: ["Mesadas de baño", "Revestimientos"],
     colors: ["Marrones"],
@@ -320,7 +298,6 @@ export const products: Product[] = [
     name: "Silestone Blanco",
     description:
       "Superficie de cuarzo compactado de alta tecnología, extremadamente resistente a manchas y rayaduras. Ideal para mesadas modernas de cocina y baño, con bajo mantenimiento y alta durabilidad.",
-    priceFrom: 0,
     material: "silestone",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Blanco"],
@@ -334,7 +311,6 @@ export const products: Product[] = [
     name: "Silestone Blanco Norte",
     description:
       "Superficie de cuarzo de tono blanco frío y uniforme que aporta luminosidad y amplitud visual. Ideal para cocinas modernas que buscan estética limpia con gran resistencia al uso diario.",
-    priceFrom: 0,
     material: "silestone",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Blanco"],
@@ -348,7 +324,6 @@ export const products: Product[] = [
     name: "Silestone Aluminio",
     description:
       "Superficie de cuarzo de tonalidad gris aluminio con estética moderna e industrial. Perfecta para cocinas contemporáneas y espacios minimalistas que requieren durabilidad y fácil mantenimiento.",
-    priceFrom: 0,
     material: "silestone",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Gris"],
@@ -362,7 +337,6 @@ export const products: Product[] = [
     name: "Silestone Crema",
     description:
       "Superficie de cuarzo de tono crema suave que aporta calidez y elegancia a cualquier ambiente. Ideal para cocinas y baños con diseño clásico o contemporáneo.",
-    priceFrom: 0,
     material: "silestone",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Beige", "Crema"],
@@ -376,7 +350,6 @@ export const products: Product[] = [
     name: "Silestone Rojo",
     description:
       "Superficie de cuarzo de color rojo vibrante, perfecta para proyectos modernos y audaces. Combina diseño impactante con resistencia superior al uso diario.",
-    priceFrom: 0,
     material: "silestone",
     application: ["Mesadas de cocina"],
     colors: ["Rojo"],
@@ -390,7 +363,6 @@ export const products: Product[] = [
     name: "Silestone Calacatta Classic",
     description:
       "Superficie de cuarzo inspirada en el mármol Calacatta, con fondo blanco y vetas grises elegantes. Ofrece estética premium con mayor resistencia y menor mantenimiento que el mármol natural.",
-    priceFrom: 0,
     material: "silestone",
     application: ["Mesadas de cocina", "Mesadas de baño"],
     colors: ["Blanco", "Gris"],
@@ -404,7 +376,6 @@ export const products: Product[] = [
     name: "Neolith Estatuario",
     description:
       "Superficie sinterizada inspirada en el mármol Statuario, con fondo blanco y vetas grises elegantes. Ideal para cocinas modernas y revestimientos de alta gama por su resistencia al calor y a las manchas.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Blanco", "Gris"],
@@ -418,7 +389,6 @@ export const products: Product[] = [
     name: "Neolith Calatorao",
     description:
       "Superficie sinterizada oscura con vetas blancas irregulares que generan un fuerte contraste visual. Perfecta para diseños sofisticados y contemporáneos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Negro", "Gris"],
@@ -432,7 +402,6 @@ export const products: Product[] = [
     name: "Neolith Calacatta",
     description:
       "Superficie sinterizada inspirada en el mármol Calacatta, con fondo blanco brillante y vetas grises elegantes. Aporta estética premium con gran durabilidad.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Blanco", "Gris"],
@@ -446,7 +415,6 @@ export const products: Product[] = [
     name: "Neolith Blanco Carrara BC02",
     description:
       "Superficie sinterizada que replica el clásico mármol Carrara con fondo blanco y vetas grises suaves. Ideal para cocinas luminosas y elegantes.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Blanco", "Gris"],
@@ -460,7 +428,6 @@ export const products: Product[] = [
     name: "Neolith Onix Traslucent",
     description:
       "Superficie sinterizada inspirada en el ónix natural con efecto traslúcido. Permite iluminación posterior creando piezas decorativas únicas y de alto impacto visual.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Revestimientos", "Mesadas de baño"],
     colors: ["Beige", "Ámbar"],
@@ -475,7 +442,6 @@ export const products: Product[] = [
     name: "Neolith Strata Argentum",
     description:
       "Superficie sinterizada con efecto de capas minerales en tonos grises que generan profundidad visual. Ideal para diseños arquitectónicos modernos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Gris"],
@@ -489,7 +455,6 @@ export const products: Product[] = [
     name: "Neolith Pulpis",
     description:
       "Superficie sinterizada inspirada en el mármol Pulpis con base marrón oscura y vetas claras. Aporta elegancia y calidez a cocinas y revestimientos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Marrón"],
@@ -503,7 +468,6 @@ export const products: Product[] = [
     name: "Neolith Negro Marquina",
     description:
       "Superficie sinterizada inspirada en el mármol Nero Marquina, con fondo negro profundo y vetas blancas contrastantes. Ideal para diseños modernos y elegantes.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Negro"],
@@ -518,7 +482,6 @@ export const products: Product[] = [
     name: "Neolith Mirage",
     description:
       "Superficie sinterizada de tono neutro con textura suave inspirada en piedras naturales. Ideal para ambientes modernos que buscan elegancia y resistencia.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Beige", "Gris"],
@@ -532,7 +495,6 @@ export const products: Product[] = [
     name: "Neolith Krater",
     description:
       "Superficie sinterizada de tono oscuro con textura mineral inspirada en roca volcánica. Perfecta para diseños contemporáneos con carácter.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Gris oscuro"],
@@ -546,7 +508,6 @@ export const products: Product[] = [
     name: "Neolith Retrostone",
     description:
       "Superficie sinterizada inspirada en piedra natural envejecida con estética cálida y sofisticada. Ideal para revestimientos y proyectos arquitectónicos modernos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Revestimientos", "Mesadas de baño"],
     colors: ["Beige"],
@@ -560,7 +521,6 @@ export const products: Product[] = [
     name: "Neolith Arena",
     description:
       "Superficie sinterizada de tono arena claro que aporta luminosidad y calidez a cocinas y revestimientos. Ideal para ambientes minimalistas y naturales.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Beige"],
@@ -574,7 +534,6 @@ export const products: Product[] = [
     name: "Neolith Basalt Beige",
     description:
       "Superficie sinterizada inspirada en piedra basáltica con tonalidad beige suave. Combina estética natural con gran resistencia.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Beige"],
@@ -588,7 +547,6 @@ export const products: Product[] = [
     name: "Neolith Pietra di Osso",
     description:
       "Superficie sinterizada inspirada en piedra italiana con textura elegante y tonalidades claras. Ideal para cocinas sofisticadas y revestimientos contemporáneos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos", "Mesadas de baño"],
     colors: ["Beige", "Gris claro"],
@@ -602,7 +560,6 @@ export const products: Product[] = [
     name: "Neolith Barro",
     description:
       "Superficie sinterizada de tono terracota inspirado en arcilla natural. Aporta calidez y personalidad a espacios modernos y rústicos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Revestimientos", "Mesadas de baño"],
     colors: ["Terracota", "Marrón"],
@@ -616,7 +573,6 @@ export const products: Product[] = [
     name: "Neolith Basalt Grey",
     description:
       "Superficie sinterizada gris oscuro inspirada en roca volcánica. Ideal para cocinas modernas de estilo industrial.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Gris"],
@@ -630,7 +586,6 @@ export const products: Product[] = [
     name: "Neolith Lava",
     description:
       "Superficie sinterizada de tono oscuro con textura mineral inspirada en lava volcánica. Perfecta para diseños arquitectónicos modernos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Negro", "Gris oscuro"],
@@ -644,7 +599,6 @@ export const products: Product[] = [
     name: "Neolith Cement",
     description:
       "Superficie sinterizada con efecto cemento contemporáneo. Muy utilizada en cocinas modernas y espacios de estilo industrial.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Gris"],
@@ -658,7 +612,6 @@ export const products: Product[] = [
     name: "Neolith Phedra",
     description:
       "Superficie sinterizada inspirada en piedra natural con textura suave y tonos neutros. Aporta elegancia y sobriedad a cualquier ambiente.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Beige", "Gris"],
@@ -672,7 +625,6 @@ export const products: Product[] = [
     name: "Neolith Beton",
     description:
       "Superficie sinterizada con estética de hormigón moderno. Ideal para proyectos arquitectónicos contemporáneos y minimalistas.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Gris"],
@@ -686,7 +638,6 @@ export const products: Product[] = [
     name: "Neolith Concrete Taupe",
     description:
       "Superficie sinterizada con efecto cemento en tono taupe cálido. Ideal para cocinas y revestimientos modernos que buscan una estética industrial elegante.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Beige", "Gris"],
@@ -700,7 +651,6 @@ export const products: Product[] = [
     name: "Neolith Piedra di Luna",
     description:
       "Superficie sinterizada inspirada en piedra natural clara con textura suave y elegante. Ideal para cocinas luminosas y revestimientos contemporáneos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Beige", "Gris claro"],
@@ -714,7 +664,6 @@ export const products: Product[] = [
     name: "Neolith Pietra di Piombo",
     description:
       "Superficie sinterizada gris oscuro inspirada en piedra italiana natural. Aporta elegancia y sobriedad en cocinas modernas y espacios arquitectónicos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Gris oscuro"],
@@ -728,7 +677,6 @@ export const products: Product[] = [
     name: "Neolith Zaha Stone",
     description:
       "Superficie sinterizada inspirada en piedra natural con vetas sutiles que aportan profundidad visual. Ideal para proyectos arquitectónicos contemporáneos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos", "Mesadas de baño"],
     colors: ["Beige", "Gris"],
@@ -742,7 +690,6 @@ export const products: Product[] = [
     name: "Neolith Basalt Black",
     description:
       "Superficie sinterizada de color negro profundo inspirada en roca basáltica. Perfecta para cocinas modernas de estilo elegante o industrial.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Negro"],
@@ -756,7 +703,6 @@ export const products: Product[] = [
     name: "Neolith Nero Zimbabwe",
     description:
       "Superficie sinterizada inspirada en el clásico granito negro Zimbabwe. Ofrece estética sofisticada con gran resistencia para cocinas modernas.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Negro"],
@@ -770,7 +716,6 @@ export const products: Product[] = [
     name: "Neolith Pierre Bleue",
     description:
       "Superficie sinterizada inspirada en la piedra azul belga con textura natural elegante. Ideal para proyectos arquitectónicos de alta gama.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Revestimientos"],
     colors: ["Gris", "Azulado"],
@@ -784,7 +729,6 @@ export const products: Product[] = [
     name: "Neolith Aspen Grey",
     description:
       "Superficie sinterizada gris claro con estética minimalista y moderna. Ideal para cocinas luminosas y ambientes contemporáneos.",
-    priceFrom: 0,
     material: "neolith",
     application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
     colors: ["Gris claro"],
@@ -798,7 +742,6 @@ export const products: Product[] = [
     name: "Piedra San Luis - Laja Natural Regular",
     description:
       "Piedra San Luis en laja natural regular, ideal para revestimientos rústicos y fachadas con estética tradicional. Su textura natural aporta carácter en exteriores e interiores.",
-    priceFrom: 0,
     material: "piedra",
     application: ["Revestimientos", "Pisos"],
     colors: ["Grises", "Verde"],
@@ -813,7 +756,6 @@ export const products: Product[] = [
     name: "Piedra San Luis - Laja Cortada",
     description:
       "Laja cortada de Piedra San Luis, seleccionada para lograr terminaciones más uniformes en pisos y revestimientos. Excelente opción para proyectos residenciales y comerciales.",
-    priceFrom: 0,
     material: "piedra",
     application: ["Revestimientos", "Pisos"],
     colors: ["Grises"],
@@ -827,7 +769,6 @@ export const products: Product[] = [
     name: "Piedra San Luis - Laja Verde-Rosada",
     description:
       "Variante de Piedra San Luis con tonos verde-rosados, muy valorada por su estética única y natural. Ideal para destacar muros, senderos y espacios exteriores.",
-    priceFrom: 0,
     material: "piedra",
     application: ["Revestimientos", "Pisos"],
     colors: ["Verde", "Rosa"],
@@ -841,7 +782,6 @@ export const products: Product[] = [
     name: "Piedra San Luis - Tacos",
     description:
       "Tacos de Piedra San Luis para pisos exteriores, patios y veredas. Su formato brinda gran resistencia al tránsito y un acabado natural de alto impacto visual.",
-    priceFrom: 0,
     material: "piedra",
     application: ["Pisos", "Revestimientos"],
     colors: ["Grises", "Marrones/Rojos"],
@@ -855,7 +795,6 @@ export const products: Product[] = [
     name: "Piedra San Luis - Murete",
     description:
       "Murete de Piedra San Luis para revestimiento de paredes y medianeras, con terminación rústica y elegante. Recomendado para destacar detalles arquitectónicos.",
-    priceFrom: 0,
     material: "piedra",
     application: ["Revestimientos"],
     colors: ["Grises", "Beige"],

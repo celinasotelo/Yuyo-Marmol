@@ -10,7 +10,6 @@ export interface Product {
   id: string
   name: string
   description: string
-  priceFrom: number
   material: MaterialType
   application: ApplicationType[]
   colors: string[]

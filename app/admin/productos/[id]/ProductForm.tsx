@@ -17,7 +17,6 @@ export default function ProductForm({ product, isNew }: { product: any, isNew: b
 
   const [name, setName] = useState(product?.name ?? '')
   const [description, setDescription] = useState(product?.description ?? '')
-  const [priceFrom, setPriceFrom] = useState(product?.price_from ?? '')
   const [material, setMaterial] = useState(product?.material ?? MATERIALS[0])
   const [application, setApplication] = useState<string[]>(product?.application ?? [])
   const [colors, setColors] = useState<string[]>(product?.colors ?? [])
@@ -201,17 +200,6 @@ export default function ProductForm({ product, isNew }: { product: any, isNew: b
               </button>
             ))}
           </div>
-        </div>
-
-        {/* Precio */}
-        <div>
-          <label className="text-sm font-medium text-gray-700 block mb-1">Precio desde</label>
-          <input
-            type="number"
-            value={priceFrom}
-            onChange={e => setPriceFrom(e.target.value)}
-            className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-gray-400"
-          />
         </div>
 
         {/* Colores */}

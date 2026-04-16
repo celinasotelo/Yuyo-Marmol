@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 
+const WORK_MATERIALS = ["granito", "marmol", "silestone", "neolith", "restauraciones"]
+
 export default function TrabajoForm({ trabajo, isNew }: { trabajo: any, isNew: boolean }) {
   const router = useRouter()
   const supabase = createClient()
@@ -14,6 +16,8 @@ export default function TrabajoForm({ trabajo, isNew }: { trabajo: any, isNew: b
   const [uploading, setUploading] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
+
+  const [material, setMaterial] = useState(trabajo?.material ?? WORK_MATERIALS[0])
 
   async function handleImageUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const files = Array.from(e.target.files ?? [])
@@ -57,7 +61,7 @@ export default function TrabajoForm({ trabajo, isNew }: { trabajo: any, isNew: b
     setSaving(true)
     setError('')
 
-    const payload = { title, description, images }
+    const payload = { title, description, material, images }
 
     const { error } = isNew
       ? await supabase.from('trabajos').insert(payload)
@@ -115,6 +119,25 @@ export default function TrabajoForm({ trabajo, isNew }: { trabajo: any, isNew: b
             rows={3}
             className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-gray-400 resize-none"
           />
+        </div>
+
+        <div>
+          <label className="text-sm font-medium text-gray-700 block mb-2">Material</label>
+          <div className="flex flex-wrap gap-2">
+            {WORK_MATERIALS.map(m => (
+              <button
+                key={m}
+                onClick={() => setMaterial(m)}
+                className={`px-3 py-1.5 rounded-lg text-sm border transition-colors ${
+                  material === m
+                    ? 'bg-gray-800 text-white border-gray-800'
+                    : 'border-gray-200 text-gray-600 hover:border-gray-300'
+                }`}
+              >
+                {m}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div>

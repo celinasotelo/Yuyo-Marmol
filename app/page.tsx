@@ -38,7 +38,7 @@ export default function Home() {
             </Link>
 
             <a
-              href="https://wa.me/549XXXXXXXXX"
+              href="https://wa.me/5493794697318"
               target="_blank"
               className="border border-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-[var(--primary)] transition"
             >

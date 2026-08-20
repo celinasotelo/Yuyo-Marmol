@@ -15,6 +15,22 @@ export const products: Product[] = [
     thickness: "2 cm y 3 cm",
     featured: true,
   },
+
+  {
+    id: "granito-violeta-de-salto",
+    name: "Granito Violeta de Salto",
+    description:
+      "Granito natural de tonalidad violeta con vetas marrones y rojizas, ideal para quienes buscan calidez y resistencia en un mismo material. Su excelente dureza y baja absorción lo convierten en una opción perfecta para mesadas de cocina, baños y revestimientos tanto interiores como exteriores.",
+    material: "granito",
+    application: ["Mesadas de cocina", "Mesadas de baño", "Revestimientos"],
+    colors: ["Marrones/Rojos"],
+    images: ["/images/granito/violetadesalto0.png", "/images/granito/violetadesalto2.png"],
+    hardness: "Alta resistencia al rayado y al calor",
+    format: "Placas y cortes a medida",
+    thickness: "2 cm y 3 cm",
+    featured: true,
+  },
+
   {
     id: "granito-san-felipe",
     name: "Granito San Felipe",
